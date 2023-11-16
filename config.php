@@ -1,6 +1,6 @@
 <?php 
 try {
-    $db = new PDO("mysql:host=localhost;dbname=olindeon1_mydatebase;charset=utf8","olindeon1_sado","");
+    $db = new PDO("mysql:host=localhost;dbname=dbname;charset=utf8","username","pass");
     $db-> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOExpection $hata) {
     echo $hata -> getMessage();
